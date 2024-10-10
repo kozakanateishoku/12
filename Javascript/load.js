@@ -61,7 +61,7 @@ async function sign(){
 		}
 
 		await sleep(100);
-		csv_data("color.csv");
+		csv_data("content.csv");
 		while(!go){
 			await sleep(10);
 		}
