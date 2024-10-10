@@ -1,0 +1,7 @@
+PeopleName, time, What they said
+Log_system, 01:50, エラーコード:012(電力供給の強制切断)　により終了しました
+Log_system, 数分前, 電力が一部復旧しました
+Log_system, 数分前, 定常スキャンを開始します
+Log_system, 数分前, 電力消費量の異常を確認
+Log_system, 数分前, 現在の電力消費量 最大電力の91%
+Log_system, 数分前, 停止命令:000　管理AI「抹香」による定常スキャンの強制終了が行われました。
