@@ -56,8 +56,14 @@ async function sign(){
 	async function asyncProcess() {
 
 		async function inpt(aaa){
-			input("user:" + dataArray[aaa][0] + "　" + dataArray[aaa][1] + dataArray[aaa][2]);
-			
+			let l = "user:" + dataArray[aaa][0] + "　" + dataArray[aaa][1] + dataArray[aaa][2];
+			l = l.split("")
+			for(let i = 0; i < l.length;i++){
+				input(l[i],false);
+				await sleep(10);
+			}
+			input("")
+			go = true;
 		}
 
 		await sleep(100);
@@ -65,10 +71,16 @@ async function sign(){
 		while(!go){
 			await sleep(10);
 		}
-		input("ロード完了")
+		go = false
+		input("ロード完了　出力します。")
 		for(let i = 1; i < dataArray.length;i++){
+			let na = ("user:" + dataArray[i][0] + "　" + dataArray[i][1] + dataArray[i][2]).length;
 			inpt(i)
-			await sleep(500);
+			while(!go){
+				await sleep(1);
+			}
+			await sleep(20);
+			go = false;
 		}
 	}
 
