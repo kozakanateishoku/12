@@ -45,10 +45,10 @@ async function sign(){
 				output_csv.innerHTML = "";
 			}else if(answer == "冬"){
 				input("　認証完了！");
-				document.getElementById("button").disabled = true;
 				asyncProcess();
 			}else{
 				input("　認証失敗！　答えを入力しなおしてください")
+				document.getElementById("button").disabled = false;
 			}
 		}
 	}
@@ -84,6 +84,7 @@ async function sign(){
 		}
 	}
 
+	document.getElementById("button").disabled = true;
 	output_csv.innerHTML = "";
 	let answer = document.getElementById("answer").value;	
 	check();
