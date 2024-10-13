@@ -1,4 +1,4 @@
-const output_csv = document.getElementById('log1');
+const output_csv = document.getElementById('log');
 let dataArray = [];
 let go = false;
 
