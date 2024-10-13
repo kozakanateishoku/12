@@ -67,7 +67,7 @@ async function sign(){
 		}
 
 		await sleep(100);
-		csv_data("content.csv");
+		csv_data("Resourse/content.csv");
 		while(!go){
 			await sleep(10);
 		}
