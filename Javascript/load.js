@@ -26,7 +26,13 @@ async function sign(){
 		if(aaa){
 			output_csv.innerHTML += "<br>";
 		}
+		var element = document.documentElement;
+		var bottom = element.scrollHeight - element.clientHeight;
+		window.scroll(0, bottom);
+
 	}
+
+
 	async function sleep(aaa){
 		await new Promise((resolve) => setTimeout(resolve,aaa))
 	}
@@ -75,7 +81,7 @@ async function sign(){
 		input("ロード完了　出力します。")
 		for(let i = 1; i < dataArray.length;i++){
 			let na = ("user:" + dataArray[i][0] + "　" + dataArray[i][1] + dataArray[i][2]).length;
-			inpt(i)
+			inpt(i);
 			while(!go){
 				await sleep(1);
 			}
