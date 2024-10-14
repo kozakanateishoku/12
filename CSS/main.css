@@ -3,8 +3,11 @@ body{
     color:rgb(0, 255, 0);
     padding: 0;
     margin: 0;
-    font-family: arial black;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 *::-webkit-scrollbar{
   display: none;
