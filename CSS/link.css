@@ -1,0 +1,6 @@
+#hint {
+    display: none; /* 初期状態では非表示 */
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333; /* ヒントの色 */
+}
