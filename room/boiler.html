@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>HTML入門-フォームの作成</title>
+    <link href="./CSS/link.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <h1>機関室</h1>
+    <form action="#" method="post">
+        <p>パスワード：<br>
+        <input type="text" name="name"></p>
+
+        <button id="hintButton">押してヒントを見る</button>
+        <div id="hint">これです</div>
+    </form>
+
+    <script>
+        document.getElementById("hintButton").addEventListener("click", function(event) {
+            event.preventDefault(); // フォームの送信を防ぐ
+            // ヒントを表示
+            document.getElementById("hint").style.display = "block"; 
+            // ボタンを非表示にする
+            this.style.display = "none"; 
+        });
+    </script>
+</body>
+</html>
