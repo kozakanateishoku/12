@@ -4,7 +4,6 @@ let go = false;
 
 function csv_data(dataPath) {
 	const request = new XMLHttpRequest(); // HTTPでファイルを読み込む
-	let aaaa = [];
 	request.addEventListener('load', (event) => { // ロードさせ実行
 		const response = event.target.responseText; // 受け取ったテキストを返す
 		const dataString = response.split('\n'); //改行で分割
